@@ -1,6 +1,58 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
 ---
+
+<section id="landing">
+  <img class="img-circle img-fancy" src="/images/hubert-lin.jpg" alt="Selfie of Hubert Lin in a Hong Kong apartment hallway">
+  <h1 class="my-3">Hubert Lin</h1>
+  <div class="social-media-bar">
+    <a class="p-4" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+    <a class="p-4" href="https://www.github.com/{{ site.github_username }}" target="_blank"><i class="fab fa-github fa-2x"></i>
+  </a>
+  </div>
+  <hr>
+  <nav>
+  {% for page in site.data.nav.pages %}
+    <a href="{{ page.url }}">{{ page.title }}</a>
+  {% endfor %}
+  </nav>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Freestyle Movement Dance Company</h5>
+      <p class="card-text">Non-profit static website built using Bootstrap 4 and Jekyll.</p>
+    </div>
+    <img class="card-img-top" src="/images/freestylemovement.jpg" alt="Card image cap">
+    <div class="card-footer"><a href="https://freestylemovement.ca">
+      <small class="text-muted">https://freestylemovement.ca</small>
+    </a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Sion Kim - SVisualz</h5>
+      <p class="card-text">Jekyll static generated photography website and blog.</p>
+    </div>
+    <img class="card-img-top" src="/images/svisualz.jpg" alt="Card image cap">
+    <div class="card-footer"><a href="https://svisualz.com" target="_blank">
+      <small class="text-muted">https://svisualz.com</small>
+    </a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Quizzer App</h5>
+      <p class="card-text">Single page JavaScript application that helped us study for some tests.</p>
+    </div>
+    <img class="card-img-top" src="/images/quizzerapp.jpg" alt="Card image cap">
+    <div class="card-footer"><a href="http://quizzerapp.hlink.ca">
+      <small class="text-muted">http://quizzerapp.hlink.ca</small>
+    </a>
+    </div>
+  </div>
+</div>
+</section>
