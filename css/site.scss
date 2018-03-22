@@ -2,6 +2,7 @@
 ---
 html, body {
   height: 100%;
+  font-family: 'Open Sans', sans-serif;
 }
 body {
   text-align: center;
@@ -27,4 +28,36 @@ section {
 
 hr {
   width: 400px;
+}
+.social-media-bar a {
+  transition: .2s ease;
+  color: rgb(128, 0, 32);
+}
+.social-media-bar a:hover {
+  color: rgba(128, 0, 32, 0.5);
+}
+// Nav Item 
+nav a.nav-item {
+  transition: .2s ease;
+  color: rgba(0,0,0,0.75);
+  padding: auto;
+  border-bottom: 1px solid;
+  border-color: rgba(0,0,0,0.4);
+  width: 30px;
+}
+nav a.nav-item:link {
+
+}
+nav a.nav-item:visited {
+
+}
+nav a.nav-item:hover {
+  text-decoration: none;
+  color: rgba(0,0,0,1);
+  border-color: rgba(0,0,0,1);
+  text-shadow: 0 0 1px rgba(0,0,0,0.5);
+}
+
+nav a.nav-item:active {
+
 }
