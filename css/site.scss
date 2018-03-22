@@ -27,7 +27,8 @@ section {
 }
 
 hr {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
 }
 .social-media-bar a {
   transition: .2s ease;
