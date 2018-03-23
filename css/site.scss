@@ -57,7 +57,9 @@ nav a.nav-item:hover {
 nav a.nav-item:active {
 
 }
-
+.card {
+  border: 0;
+}
 
 .card a img {
   border-bottom: 1px solid;
@@ -87,7 +89,7 @@ nav a.nav-item:active {
 }
 
 .zd-1.hoverable:hover {
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .zd-2.hoverable:hover {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
