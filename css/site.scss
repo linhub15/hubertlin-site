@@ -14,11 +14,8 @@ section {
   height: 100vh;
 }
 .img-circle {
-  transition: .3s ease;
-  border-style: solid;
   border-radius: 50%;
-  border-width: 1px;
-  border-color: black;
+  transition: .3s ease;
 }
 
 hr {
