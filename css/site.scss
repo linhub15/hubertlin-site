@@ -4,7 +4,7 @@ html, body {
   height: 100%;
   font-family: 'Open Sans', sans-serif;
 }
-body {
+body#home {
   text-align: center;
 }
 #top {
@@ -30,6 +30,9 @@ hr {
   color: rgba(128, 0, 32, 0.5);
 }
 // Nav Item 
+nav {
+  text-align: center;
+}
 nav a.nav-item {
   transition: .2s ease;
   color: rgba(0,0,0,0.75);
@@ -38,12 +41,7 @@ nav a.nav-item {
   border-color: rgba(0,0,0,0.4);
   width: 30px;
 }
-nav a.nav-item:link {
 
-}
-nav a.nav-item:visited {
-
-}
 nav a.nav-item:hover {
   text-decoration: none;
   color: rgba(0,0,0,1);
@@ -51,9 +49,6 @@ nav a.nav-item:hover {
   font-weight: 700;
 }
 
-nav a.nav-item:active {
-
-}
 .card {
   border: 0;
 }

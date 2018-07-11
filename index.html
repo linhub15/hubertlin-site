@@ -13,6 +13,9 @@ layout: default
   <hr>
   <nav>
   {% for page in site.data.nav.pages %}
+    {% if page.url == '/' %}
+      {% continue %}
+    {% endif %}
     <a class="nav-item pb-1 mx-3" href="{{ page.url }}">{{ page.title }}</a>
   {% endfor %}
   </nav>
