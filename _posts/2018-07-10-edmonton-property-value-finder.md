@@ -1,7 +1,7 @@
 ---
 layout: posts
-title:  "Edmonton Property Value Finder"
-date:   2018-07-11
+title: "Edmonton Property Value Finder"
+date: 2018-07-11 00:00:00
 categories: development
 ---
 

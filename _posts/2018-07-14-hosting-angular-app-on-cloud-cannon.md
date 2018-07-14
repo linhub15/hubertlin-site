@@ -6,6 +6,8 @@ categories:
   - development
 ---
 
+# {{ page.title }}
+
 I've been using Cloud Cannon Hosting for Jekyll static generated websites for a few months now. When I finally started learning about Angular it seemed like both would play well since they are both served from static resources. I was wrong.
 
 As it turns out, Angular apps are meant for "Single Page Applications" so they are literally one page. The index.html page. So when I try to use Angular Router and go to www.example.com/ComponentPage I get a 404 resource not found.
@@ -22,7 +24,7 @@ Create a 404.html page and copy the contents of index.html into that page. Cloud
 
 1. Create an empty 404.html page in /src/ directory
 2. Add "404.html" to the "projects/[your-app]/architect/build/options/assets" array found in the src/angular.json file
-3. ng build –prod
+3. <code>ng build –-prod</code>
 4. Copy the contents of the /dist/index.html into /dist/404.html
 5. git commit / git push
 
