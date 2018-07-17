@@ -2,6 +2,7 @@
 layout: posts
 title: Hosting Angular App on Cloud Cannon
 date: 2018-07-14 00:00:00
+comments: true
 categories:
   - development
 ---

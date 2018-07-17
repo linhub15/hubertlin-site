@@ -20,7 +20,7 @@ description: |
   He enjoys learning about new technologies in his spare time and always looking for problems that need solving.
   
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "hubertlin.me" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: linhub15
 github_username: linhub15
 instagram_username: link_ct
