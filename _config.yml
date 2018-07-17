@@ -21,6 +21,7 @@ description: |
   
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://hubertlin.me" # the base hostname & protocol for your site, e.g. http://example.com
+disqus_shortname: "hubertlin"
 linkedin_username: linhub15
 github_username: linhub15
 instagram_username: link_ct
