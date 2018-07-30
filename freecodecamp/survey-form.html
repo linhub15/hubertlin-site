@@ -1,0 +1,71 @@
+---
+---
+<style>
+    form {
+        max-width: 700px;
+        margin: auto;
+    }
+    .form-row {
+        padding-bottom: 20px;
+        display: block;
+        width: 100%;
+    }
+    .form-row > label {
+        width: 200px;
+        text-align: right;
+    }
+    .form-row > input,select,textarea {
+        width: 400px;
+    }
+    .form-row > input[type="radio"], input[type="checkbox"] {
+        width: auto;
+        margin-left: 50px;
+    }
+</style>
+<h1 id="title">Survey - How many cars do you own?</h1>
+<p id="description">Fill out this form</p>
+<form id="survey-form">
+
+    <div class="form-row">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+    </div>
+    
+    <div class="form-row">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+    </div>
+    
+
+    <div class="form-row">
+        <label for="number" id="number-label">Number of Cars owned</label>
+        <input type="number" id="number" placeholder="Enter a number" min="0" max="99">
+    </div>
+    
+    <div class="form-row">
+        <label for="dropdown">Select your age group</label>
+        <select name="agegroup" id="dropdown">
+        <option value="1">Teenager 13-17</option>
+        <option value="2">Young Adult 18-15</option>
+        <option value="3">Adult 26-64</option>
+        <option value="4">Senior 65+</option>
+        </select>
+    </div>
+
+    <div class="form-row">
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="other">Other
+    </div>
+
+    <div class="form-row">
+        <input type="checkbox" name="opinion" value="poor"> I don't have much money
+        <input type="checkbox" name="opinion" value="like"> I really like cars
+    </div>
+
+    <div class="form-row">
+        <label for="comments">Aditional Comments</label>
+        <textarea id="comments"></textarea>
+    </div>
+    <button type="submit" id="submit">Submit the Form</button>
+</form>
