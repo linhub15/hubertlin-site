@@ -1,0 +1,8 @@
+pages:
+  - title: Home
+    url: /
+  - title: Free Code Camp Projects
+    url: /freecodecamp-projects
+  - title: Tribute Page
+    url: /freecodecamp-projects/tribute-page.html
+  

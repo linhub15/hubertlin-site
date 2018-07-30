@@ -1,5 +1,6 @@
 ---
-layout: default
+title: Hubert Lin
+nav: none
 ---
 
 <section id="top">
@@ -11,14 +12,7 @@ layout: default
     <a class="px-4" href="https://www.instagram.com/{{ site.instagram_username }}" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
   </div>
   <hr>
-  <nav>
-  {% for page in site.data.nav.pages %}
-    {% if page.url == '/' %}
-      {% continue %}
-    {% endif %}
-    <a class="nav-item pb-1 mx-3" href="{{ page.url }}">{{ page.title }}</a>
-  {% endfor %}
-  </nav>
+  {% include site-nav.html %}
 </section>
 
 <section id="projects">

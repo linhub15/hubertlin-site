@@ -1,20 +1,15 @@
 ---
+layout: master
 ---
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  {% include head.html %}
-</head>
-
-<body id="home">
+{% if page.nav == "site-nav" %}
   {% include site-nav.html %}
-  
-  <div id="{{ page.id }}">
+{% elsif page.nav == "fcc-nav" %}
+  {% include fcc-nav.html %}
+{% endif %}
 
-  {{ content }}
-  
-  </div>
-  {% include footer.html %}
-</body>
-</html>
+<div id="{{ page.id }}">
+
+{{ content }}
+
+</div>
