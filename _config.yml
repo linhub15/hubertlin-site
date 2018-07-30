@@ -35,6 +35,8 @@ defaults:
       nav: "site-nav"
   -
     scope:
-      path: "freecodecamp-projects"
+      path: "freecodecamp"
     values:
       nav: "fcc-nav"
+      include-js: 
+        - https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js

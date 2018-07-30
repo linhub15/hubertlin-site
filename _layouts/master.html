@@ -10,5 +10,9 @@
     {{ content }}
 
     {% include footer.html %}
+
+    {% for jsFile in page.include-js %}
+    <script src="{{ jsFile }}"></script>
+    {% endfor %}
 </body>
 </html>
