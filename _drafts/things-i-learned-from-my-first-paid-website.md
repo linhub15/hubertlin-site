@@ -1,7 +1,41 @@
 ---
 layout: posts
 title: Things I learned from my first paid website
-date:
+date: 2018-09-10 00:00:00
 comments: true
-categories: development
+categories:
+  - development
 ---
+
+Yes that's right, I built my first website for a paying client. Although not the greatest accomplishment, I want to share my experience so you and other business owners can get some perspective.
+
+With SquareSpace, Shopify, Wix and all those other website building apps, it seems like there really isn't a reason to hire a web developer these days. I mean, why would someone pay a few hundred dollars when they could just pay $9.99 and get a really good looking site?&nbsp;
+
+Well... here's a few reasons:
+
+* Save your time for running your business, not learning html, css, and javascript
+* Prevent future headache by letting me set things up right the first time&nbsp;
+* Get an action oriented website, not a generic template that everyone else uses
+* Need someone to blame? You got my number!
+
+## How it started
+
+Real simple, I put up an ad on Kijiji.ca and waited. I received about 50 views, and about 3 replies all of whom were asking my prices. **Don't put your price up!** If it's one thing I think I did right it's that I didn't tell them my price first. If you tell them your price before knowing the requirements there's no way to know it will cover your costs. Always get the requirements before giving an estimate.
+
+## Then what?
+
+So once I got a client that talked over Kijiji and had some general requirements, I called them. That's right, I used the phone for what it's actually used for. Calling the client let me really hash out the details and allow me to come to pretty accurate quote. Also it helped me get to know them and what their business was like. That's very important if your website is supposed to help their business.
+
+## Development
+
+Now that the hard parts out of the way, I began working with my graphics designer friend to set up the wireframe and prototype. We use [Adobe XD](https://www.adobe.com/ca/products/xd.html){: target="_blank"} cause it's got an amazing publish feature that lets the client see your prototype over the web and, of course, **it's****free**.&nbsp;
+
+With all the content compiled and ready to go, we setup the layout. Then got sign-off from the client. Next we put in the content and images into the layout and again got client approval. Finally we added colors, background images and all the fancy stuff. At this point the client was pretty satisfied with the product because after each major addition we consulted them.&nbsp;
+
+**Communication is Key**
+
+## Deployment, Hosting & Happily Ever After?
+
+&nbsp;
+
+&nbsp;
