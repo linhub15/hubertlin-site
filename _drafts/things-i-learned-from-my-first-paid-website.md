@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: Things I learned from my first paid website
+title: Things I Learned from My First Paid Website Project
 date: 2018-09-10 00:00:00
 comments: true
 categories:
@@ -11,7 +11,7 @@ Yes that's right, I built my first website for a paying client. Although not the
 
 With SquareSpace, Shopify, Wix and all those other website building apps, it seems like there really isn't a reason to hire a web developer these days. I mean, why would someone pay a few hundred dollars when they could just pay $9.99 and get a really good looking site?&nbsp;
 
-Well... here's a few reasons:
+Well… here's a few reasons:
 
 * Save your time for running your business, not learning html, css, and javascript
 * Prevent future headache by letting me set things up right the first time&nbsp;
@@ -30,12 +30,24 @@ So once I got a client that talked over Kijiji and had some general requirements
 
 Now that the hard parts out of the way, I began working with my graphics designer friend to set up the wireframe and prototype. We use [Adobe XD](https://www.adobe.com/ca/products/xd.html){: target="_blank"} cause it's got an amazing publish feature that lets the client see your prototype over the web and, of course, **it's****free**.&nbsp;
 
-With all the content compiled and ready to go, we setup the layout. Then got sign-off from the client. Next we put in the content and images into the layout and again got client approval. Finally we added colors, background images and all the fancy stuff. At this point the client was pretty satisfied with the product because after each major addition we consulted them.&nbsp;
+With all the content compiled and ready to go, we setup the layout and get sign-off from the client. Next we content and images are put into the layout and again get client approval. Finally we add colors, background images and all the fancy stuff. At this point the client was pretty satisfied with the product because we consulted them after each major addition.
 
 **Communication is Key**
 
+With all the designs complete all that's left is to code. Very straight forward. We use [Jekyll](https://jekyllrb.com/){: target="_blank"}, a Ruby static site generator, and host our sites on [CloudCannon](https://cloudcannon.com/){: target="_blank"}.&nbsp;
+
 ## Deployment, Hosting & Happily Ever After?
 
-&nbsp;
+With Github integration in CloudCannon, deployment was super simple, and domain name setup very straight forward.
+
+## SEO, SEO, SEO
+
+My first time trying to do SEO and this is what I learned to be the most important
+
+* Website needs to be valid (Basic HTML, CSS, JS)
+* Relevant content and descriptions (meta tags, img alts ... etc)
+* SEO page names (e.g. https://example.com/cheap-website-designs.html)
+* Optimize for speed (minify css & js, compress images, reduce number of dependent requests)
+* &nbsp;
 
 &nbsp;
