@@ -7,8 +7,6 @@ categories:
   - development
 ---
 
-# {{ page.title }}
-
 I've been using Cloud Cannon Hosting for Jekyll static generated websites for a few months now. When I finally started learning about Angular it seemed like both would play well since they are both served from static resources. I was wrong.
 
 As it turns out, Angular apps are meant for "Single Page Applications" so they are literally one page. The index.html page. So when I try to use Angular Router and go to www.example.com/ComponentPage I get a 404 resource not found.

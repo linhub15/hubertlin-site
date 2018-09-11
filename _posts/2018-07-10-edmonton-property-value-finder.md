@@ -6,8 +6,6 @@ comments: true
 categories: development
 ---
 
-# {{ page.title }}
-
 The Edmonton Property Value Finder is a tool for Edmontonians to find out the assessed value of their property from the City of Edmonton Open Data Set. I built this app to learn about consuming data from a web API and chose to make something that could benefit others as well.
 
 The first iteration of the app used the Bootstrap 4 Framework for front-end components and jQuery for handling the API requests. The second iteration of the app is built as an Angular single page application with Angular Material for front-end components.
