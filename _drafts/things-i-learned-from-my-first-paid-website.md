@@ -28,7 +28,7 @@ So once I got a client that talked over Kijiji and had some general requirements
 
 ## Development
 
-Now that the hard parts out of the way, I began working with my graphics designer friend to set up the wireframe and prototype. We use [Adobe XD](https://www.adobe.com/ca/products/xd.html){: target="_blank"} cause it's got an amazing publish feature that lets the client see your prototype over the web and, of course, **it's****free**.&nbsp;
+Now that the hard parts out of the way, I began working with my graphics designer friend to set up the wireframe and prototype. We use [Adobe XD](https://www.adobe.com/ca/products/xd.html){: target="_blank"} cause it's got an amazing publish feature that lets the client see your prototype over the web and, of course, **it's&nbsp;****free**.&nbsp;
 
 With all the content compiled and ready to go, we setup the layout and get sign-off from the client. Next we content and images are put into the layout and again get client approval. Finally we add colors, background images and all the fancy stuff. At this point the client was pretty satisfied with the product because we consulted them after each major addition.
 
@@ -42,12 +42,19 @@ With Github integration in CloudCannon, deployment was super simple, and domain 
 
 ## SEO, SEO, SEO
 
-My first time trying to do SEO and this is what I learned to be the most important
+Tips and tricks coming from a first time SEO-er
 
 * Website needs to be valid (Basic HTML, CSS, JS)
-* Relevant content and descriptions (meta tags, img alts ... etc)
+* Relevant content and descriptions (meta tags, img alts … etc)
 * SEO page names (e.g. https://example.com/cheap-website-designs.html)
 * Optimize for speed (minify css & js, compress images, reduce number of dependent requests)
-* &nbsp;
+* Search the phrase you want to rank in and click your website with as many different IP addresses to increase rankings (it works... it went from page 5 to page 1)
+* Use [Google Search Console](https://search.google.com/search-console/about){: target="_blank"} to see how your site is doing (it takes a few days to crawl and index)
 
-&nbsp;
+## Conclusion
+
+So in the end of the project I got paid what I quoted plus a little bonus. Spent about 40 hours developing the site, and almost 20 hours figuring out how to do SEO making small tweaks here and there. I would definitely charge more next time just because it takes so much time to design. All in all, it was a good experience working with the client and my designer friend.&nbsp;
+
+Until next time!
+
+-- Hubert Lin
