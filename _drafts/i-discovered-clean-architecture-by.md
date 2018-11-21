@@ -18,5 +18,11 @@ Out of all the concepts, patterns and principles in the book I want to implement
 * Core domain should be decoupled from any **frameworks**
 * Core domain should be decoupled from any&nbsp;**data persistence**
 
-&nbsp;
+##### My Current API architecture![The original layout of the application when first developed.](/uploads/tymish-architecture-original.png "Original Tymish Architecture")
 {: .present-before-paste}
+
+&nbsp;
+
+##### The Goal
+
+&nbsp;
