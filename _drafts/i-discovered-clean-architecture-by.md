@@ -25,7 +25,7 @@ Out of all the concepts, patterns and principles in the book I want to implement
 
 ##### Clean Architecture Concept Version 1
 
-![](/uploads/tymish-architecture-clean-v1.png)
+![](/uploads/tymish-architecture-clean-v1.png "Tymish Architecture Clean Version 1")
 
 Seems straight forward but not 100% sure on how this will turn out. I can already see there's going to be a few challenges so I'll write about them and their solutions as I refactor the code.
 
