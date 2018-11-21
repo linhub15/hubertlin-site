@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: I Discovered Clean Architecture by Robert C. Martin
-date:
+date: 2018-11-21 00:00:00
 comments: true
 categories:
   - development
