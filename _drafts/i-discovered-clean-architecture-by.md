@@ -1,7 +1,9 @@
 ---
 layout: posts
-title: I discovered Clean Architecture by
+title: I Discovered Clean Architecture by Robert C. Martin
 date:
 comments: true
-categories: development
+categories:
+  - development
 ---
+
