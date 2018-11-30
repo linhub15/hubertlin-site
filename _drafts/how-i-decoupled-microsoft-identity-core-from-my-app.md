@@ -43,5 +43,10 @@ That's it for the Core.
 
 In the infrastructure layer, we create an Authenticator to implement the IAuthenticator interface. This is where we include dependencies on Microsoft.AspNetCore.Identity as well as all other dependencies we will be using.
 
+* Use dependency injection for any required objects / services / managers... etc
+* Include helper method to generate JSON Web Token
+
+&nbsp;
+
 &nbsp;
 {: .present-before-paste}
