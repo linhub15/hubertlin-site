@@ -6,10 +6,16 @@ comments: true
 categories: development
 ---
 
-During my quest to make my architecture "clean" there was a **HUGE** dependency that needed to be inverted: <u><em>Microsoft.AspNetCore.Identity</em></u>. Even though many applications require authentication, we still shouldn't be depending on any authentication frameworks. Why depend on a framework if it could change in the future or worse, we don't use up all its features?&nbsp;
+During my quest to make my architecture "clean" there was a **HUGE** dependency that needed to be inverted: <u><em>Microsoft.AspNetCore.Identity</em></u>. Even though many applications require authentication, we still shouldn't be depending on any authentication frameworks.
 {: .present-before-paste}
 
-The project layout follows this structure:
+According to Robert C. Martin we shouldn't depend on a framework because the business rules can change or the frameworks can change. We keep things loosely coupled so that in case we need to swap out an implementation we can do so without affecting our business rules.
+{: .present-before-paste}
+
+At first, my code following typical ASP.NET Core folder structure: Models, Controllers etc. I had the authentication logic in my *AuthenticationController.cs,*&nbsp;so that's where I injected UserManager&lt;TUser&gt; and SignInManager&lt;TUser&gt;. Just in case you're not familiar with Identity Core, those two managers help us handle users and signing them in. The &lt;TUser&gt; is a class of user, e.g. IdentityUser is the Microsoft User class.
+{: .present-before-paste}
+
+The newly decoupled project layout follows this folder structure:
 {: .present-before-paste}
 
 1. Core - Core Business details, does not depend on anything but itself
@@ -157,4 +163,4 @@ public class AuthenticationController : ControllerBase
 }
 ```
 
-&nbsp;
+The only reason I did this was because I read "Clean Architecture" by Robert C. Martin. I'm still pretty new at software design and programming so feel free to offer suggestions and point out any errors you find.
