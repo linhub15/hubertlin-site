@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: How I Decoupled Identity Core from .NET Core API
-date:
+date: 2018-11-30 00:00:00
 comments: true
 categories:
   - development
