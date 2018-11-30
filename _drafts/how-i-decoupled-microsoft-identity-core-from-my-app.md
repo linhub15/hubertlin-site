@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: How I Decoupled Microsoft Identity Core from .NET Core API
+title: How I Decoupled Identity Core from .NET Core API
 date:
 comments: true
 categories:
@@ -13,7 +13,7 @@ During my quest to make my architecture "clean" there was a **HUGE** dependency 
 According to Robert C. Martin we shouldn't depend on a framework because the business rules can change or the frameworks can change. We keep things loosely coupled so that in case we need to swap out an implementation we can do so without affecting our business rules.
 {: .present-before-paste}
 
-At first, my code following typical ASP.NET Core folder structure: Models, Controllers etc. I had the authentication logic in my *AuthenticationController.cs,*&nbsp;so that's where I injected UserManager&lt;TUser&gt; and SignInManager&lt;TUser&gt;. Just in case you're not familiar with Identity Core, those two managers help us handle users and signing them in. The &lt;TUser&gt; is a class of user, e.g. IdentityUser is the Microsoft User class.
+At first, my code following typical ASP.NET Core folder structure: Models, Controllers etc. I had the authentication logic in my *AuthenticationController.cs,* so that's where I injected UserManager&lt;TUser&gt; and SignInManager&lt;TUser&gt;. Just in case you're not familiar with Identity Core, those two managers help us handle users and signing them in. The &lt;TUser&gt; is a class of user, e.g. IdentityUser is the Microsoft User class.
 {: .present-before-paste}
 
 The newly decoupled project layout follows this folder structure:
@@ -27,7 +27,7 @@ The newly decoupled project layout follows this folder structure:
 
 #### 1. Define authentication methods
 
-We need to ***register*** and ***sign in*** a user. I didn't include a ***sign out*** because I will be using JSON Web tokens and they will have a short expiry date. It's&nbsp;<u>not secure</u> so don't do this in a real application.
+We need to ***register*** and ***sign in*** a user. I didn't include a ***sign out*** because I will be using JSON Web tokens and they will have a short expiry date. It's <u>not secure</u> so don't do this in a real application.
 {: .present-before-paste}
 
 ![](/uploads/iauthenticator-1.jpg)
@@ -36,7 +36,7 @@ We need to ***register*** and ***sign in*** a user. I didn't include a ***sign o
 #### 2. Define User Class
 {: .present-before-paste}
 
-Next, we'll need to define the&nbsp;**User&nbsp;**object that we're passing into Register. In my case I only have 3 fields. User name, email, and password.
+Next, we'll need to define the **User** object that we're passing into Register. In my case I only have 3 fields. User name, email, and password.
 {: .present-before-paste}
 
 ![](/uploads/user.jpg)
