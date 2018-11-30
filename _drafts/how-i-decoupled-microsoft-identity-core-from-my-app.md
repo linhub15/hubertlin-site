@@ -16,16 +16,34 @@ The project layout follows this structure:
 2. Infrastructure - Implements and depends on core interfaces
 3. API - UI layer that depends on Infrastructure and Core
 
-## How it works
+## Steps to Decouple
 
-First let's layout what methods will need to be built. We need to ***register*** and ***sign in*** a user. I didn't include a ***sign out*** because I will be using JSON Web tokens and they will have a short expiry date. Yeah, this is not secure so make sure you have a way to invalidate / log out the user.
+#### 1. Define authentication methods
+
+We need to ***register*** and ***sign in*** a user. I didn't include a ***sign out*** because I will be using JSON Web tokens and they will have a short expiry date. It's&nbsp;<u>not secure</u> so don't do this in a real application.
 {: .present-before-paste}
 
 ![](/uploads/iauthenticator-1.jpg)
 {: .present-before-paste}
 
+#### 2. Define User Class
+{: .present-before-paste}
+
 Next, we'll need to define the&nbsp;**User&nbsp;**object that we're passing into Register. In my case I only have 3 fields. User name, email, and password.
 {: .present-before-paste}
+
+![](/uploads/user.jpg)
+{: .present-before-paste}
+
+That's it for the Core.
+{: .present-before-paste}
+
+#### 3. Implement IAuthenticator in Infrastructure
+{: .present-before-paste}
+
+In the infrastructure layer, we create an Authenticator to implement the IAuthenticator interface.
+
+&nbsp;
 
 &nbsp;
 {: .present-before-paste}
