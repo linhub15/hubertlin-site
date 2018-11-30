@@ -123,5 +123,9 @@ public string SignIn(string userName, string password)
 }
 ```
 
-&nbsp;
+#### 4. Use the Authenticator in our API Controller
 {: .present-before-paste}
+
+With the implementation complete we can pass in our Authenticator instance with dependency injection into the controller.
+
+&nbsp;
