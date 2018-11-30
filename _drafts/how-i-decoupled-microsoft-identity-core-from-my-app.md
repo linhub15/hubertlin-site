@@ -128,4 +128,33 @@ public string SignIn(string userName, string password)
 
 With the implementation complete we can pass in our Authenticator instance with dependency injection into the controller.
 
+```csharp
+[Route("api/[Controller]/[Action]")]
+[ApiController]
+public class AuthenticationController : ControllerBase
+{
+    private readonly Authenticator _authenticator;
+
+    public AuthenticationController(Authenticator authenticator)
+    {
+        _authenticator = authenticator;
+    }
+
+    [HttpPost]
+    public ActionResult Register([FromBody] User user)
+    {
+        TryValidateModel(user);
+        _authenticator.Register(user);
+        return Ok();
+    }
+
+    [HttpPost]
+    public ActionResult<string> Login([FromBody] User user)
+    {
+        TryValidateModel(user);
+        return _authenticator.SignIn(user.userName, user.password)
+    }
+}
+```
+
 &nbsp;
