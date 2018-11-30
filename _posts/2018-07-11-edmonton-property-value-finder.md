@@ -10,13 +10,14 @@ The Edmonton Property Value Finder is a tool for Edmontonians to find out the as
 
 The first iteration of the app used the Bootstrap 4 Framework for front-end components and jQuery for handling the API requests. The second iteration of the app is built as an Angular single page application with Angular Material for front-end components.
 
-*Although the data is from the City of Edmonton, I cannot guarantee the __accuracy__ or the __freshness__ of the data.*
+*Although the data is from the City of Edmonton, I cannot guarantee the **accuracy** or the **freshness** of the data.*
 
-<a href="http://propertyvaluefinder.hubertlin.me" class="btn btn-primary">Try Out the App</a>
+[Try Out the App](address-search){: .btn.btn-primary}
 
 ## So what's it do?
 
 The app takes your property's address and finds the corresponding assessment value for it.
+
 1. Input your property address
 2. The app will submit a get request with the query string parameters to the City of Edmonton Open Data API
 3. The app receives the data and identifies your assesement value
