@@ -6,7 +6,7 @@ comments: true
 categories: development
 ---
 
-During my quest to make my architecture "clean" there was a **HUGE** dependency that needed to be inverted: <u><em>Microsoft.AspNetCore.Identity</em></u>. Many web applications require authentication, so it seems natural to depend on an authentication framework. In order to follow the guidelines of clean architecture, it was important that my application's core did not depend on frameworks.
+During my quest to make my architecture "clean" there was a **HUGE** dependency that needed to be inverted: <u><em>Microsoft.AspNetCore.Identity</em></u>. Even though many applications require authentication, we still shouldn't be depending on any authentication frameworks. Why depend on a framework if it could change in the future or worse, we don't use up all its features?&nbsp;
 {: .present-before-paste}
 
 The project layout follows this structure:
