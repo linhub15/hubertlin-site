@@ -41,9 +41,7 @@ That's it for the Core.
 #### 3. Implement IAuthenticator in Infrastructure
 {: .present-before-paste}
 
-In the infrastructure layer, we create an Authenticator to implement the IAuthenticator interface. This is where we include dependencies on Microsoft.AspNetCore.Identity as well as our DbContext that will hold our Identity tables.
-
-&nbsp;
+In the infrastructure layer, we create an Authenticator to implement the IAuthenticator interface. This is where we include dependencies on Microsoft.AspNetCore.Identity as well as all other dependencies we will be using.
 
 &nbsp;
 {: .present-before-paste}
