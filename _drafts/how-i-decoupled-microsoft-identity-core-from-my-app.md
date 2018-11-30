@@ -46,6 +46,51 @@ In the infrastructure layer, we create an Authenticator to implement the IAuthen
 * Use dependency injection for any required objects / services / managers... etc
 * Include helper method to generate JSON Web Token
 
+```
+public class Authenticator : IAuthenticator
+{
+    private readonly MyDbContext _context;
+    private readonly UserManager<IdentityUser> _userManager;
+    private readonly SignInManager<IdentityUser> _signInManager;
+
+    public Authenticator(
+        MyDbContext context,
+        UserManager<IdentityUser> userManager,
+        SignInManager<IdentityUser> signInManager)
+    {
+        _context = context;
+        _userManager = userManager;
+        _signInManager = signInManager;
+    }
+    private string GenerateJwt(string userName, IdentityUser user)
+    {   
+        var claims = new List<Claim>
+        {
+            new Claim(JwtRegisteredClaimNames.Sub, userName),
+            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+            new Claim(ClaimTypes.NameIdentifier, user.Id)
+        };
+        
+        var key = new SymmetricSecurityKey(
+            Encoding.UTF8.GetBytes("someRandomKey123abc"));
+
+        var creds = new SigningCredentials(
+            key, SecurityAlgorithms.HmacSha256);
+            
+        var expires = DateTime.Now.AddDays(1);
+
+        var token = new JwtSecurityToken(
+            "JwtIssuer",
+            "JwtIssuer",
+            claims,
+            expires: expires,
+            signingCredentials: creds
+        );
+        return new JwtSecurityTokenHandler().WriteToken(token);
+    }
+}
+
+```
 &nbsp;
 
 &nbsp;
