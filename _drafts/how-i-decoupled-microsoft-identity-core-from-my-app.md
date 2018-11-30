@@ -1,9 +1,10 @@
 ---
 layout: posts
-title: How I Decoupled Microsoft Identity Core from my App
+title: How I Decoupled Microsoft Identity Core from .NET Core API
 date:
 comments: true
-categories: development
+categories:
+  - development
 ---
 
 During my quest to make my architecture "clean" there was a **HUGE** dependency that needed to be inverted: <u><em>Microsoft.AspNetCore.Identity</em></u>. Even though many applications require authentication, we still shouldn't be depending on any authentication frameworks.
@@ -20,7 +21,7 @@ The newly decoupled project layout follows this folder structure:
 
 1. Core - Core Business details, does not depend on anything but itself
 2. Infrastructure - Implements and depends on core interfaces
-3. API - UI layer that depends on Infrastructure and Core
+3. API - Public facing layer that depends on Infrastructure and Core
 
 ## Steps to Decouple
 
