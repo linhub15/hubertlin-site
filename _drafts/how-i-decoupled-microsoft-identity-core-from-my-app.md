@@ -62,7 +62,7 @@ public class Authenticator : IAuthenticator
         _userManager = userManager;
         _signInManager = signInManager;
     }
-    
+
     private string GenerateJwt(string userName, IdentityUser user)
     {
         var claims = new List<Claim>
@@ -122,5 +122,6 @@ public string SignIn(string userName, string password)
     }
 }
 ```
+
 &nbsp;
 {: .present-before-paste}
