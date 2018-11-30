@@ -91,7 +91,10 @@ public class Authenticator : IAuthenticator
 }
 ```
 
-&nbsp;
+*\*key, expiry date, and JwtIssuer should be included in an application config file*
+
+* Implement Register()
+* Implement SignIn()
 
 &nbsp;
 {: .present-before-paste}
