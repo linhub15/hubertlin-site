@@ -62,6 +62,7 @@ public class Authenticator : IAuthenticator
         _userManager = userManager;
         _signInManager = signInManager;
     }
+    
     private string GenerateJwt(string userName, IdentityUser user)
     {
         var claims = new List<Claim>
@@ -96,5 +97,30 @@ public class Authenticator : IAuthenticator
 * Implement Register()
 * Implement SignIn()
 
+```csharp
+public IdentityResult Register(User user)
+{
+    IdentityUser newUser = new IdentityUser {
+        UserName = user.userName,
+        Email = user.email };
+    return _userManager.CreateAsync(newUser, user.password).Result;
+}
+
+public string SignIn(string userName, string password)
+{
+    var result = _signInManager.PasswordSignInAsync(
+        userName, password, false, false);
+    if (result.Succeeded)
+    {
+        var user = _userManager.Users
+            .SingleOrDefault(u => u.userName == userName);
+        return GenerateJwt(userName, user);
+    }
+    else
+    {
+        return  "result.Succeeded == false";
+    }
+}
+```
 &nbsp;
 {: .present-before-paste}
