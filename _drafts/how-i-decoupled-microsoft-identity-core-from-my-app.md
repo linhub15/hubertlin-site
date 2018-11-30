@@ -43,10 +43,10 @@ That's it for the Core.
 
 In the infrastructure layer, we create an Authenticator to implement the IAuthenticator interface. This is where we include dependencies on Microsoft.AspNetCore.Identity as well as all other dependencies we will be using.
 
-* Use dependency injection for any required objects / services / managers... etc
+* Use dependency injection for any required objects / services / managers… etc
 * Include helper method to generate JSON Web Token
 
-```
+```csharp
 public class Authenticator : IAuthenticator
 {
     private readonly MyDbContext _context;
@@ -63,20 +63,20 @@ public class Authenticator : IAuthenticator
         _signInManager = signInManager;
     }
     private string GenerateJwt(string userName, IdentityUser user)
-    {   
+    {
         var claims = new List<Claim>
         {
             new Claim(JwtRegisteredClaimNames.Sub, userName),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
             new Claim(ClaimTypes.NameIdentifier, user.Id)
         };
-        
+
         var key = new SymmetricSecurityKey(
             Encoding.UTF8.GetBytes("someRandomKey123abc"));
 
         var creds = new SigningCredentials(
             key, SecurityAlgorithms.HmacSha256);
-            
+
         var expires = DateTime.Now.AddDays(1);
 
         var token = new JwtSecurityToken(
@@ -89,8 +89,8 @@ public class Authenticator : IAuthenticator
         return new JwtSecurityTokenHandler().WriteToken(token);
     }
 }
-
 ```
+
 &nbsp;
 
 &nbsp;
