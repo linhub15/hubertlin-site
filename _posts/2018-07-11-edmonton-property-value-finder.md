@@ -12,7 +12,7 @@ The first iteration of the app used the Bootstrap 4 Framework for front-end comp
 
 *Although the data is from the City of Edmonton, I cannot guarantee the **accuracy** or the **freshness** of the data.*
 
-[Try Out the App](address-search){: .btn.btn-primary}
+[Try Out the App](address-search){: .btn.btn-primary target="_blank"}
 
 ## So what's it do?
 
