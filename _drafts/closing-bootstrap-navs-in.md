@@ -23,6 +23,27 @@ Try removing .show from the open navbar. Notice how it disappears without the an
 
 So in the end here's my little directive.
 
+```
+import { Directive, HostListener } from '@angular/core';
+
+@Directive({
+  selector: '[appCloseNav]'
+})
+export class CloseNavDirective {
+
+  constructor() { }
+
+  @HostListener('click')
+  onClick() {
+    if (document.documentElement.clientWidth > 768) { return }
+    const links = document.getElementById('navbarLinks');
+    const navToggler = document.getElementById('navbarToggler');
+    if (links.classList.contains('show')) { navToggler.click(); }
+  }
+}
+
+```
+
 &nbsp;
 
 &nbsp;
