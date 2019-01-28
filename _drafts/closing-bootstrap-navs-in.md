@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: Closing Bootstrap Nav in Angular
-date:
+date: 2019-01-28 00:00:00
 comments: true
 categories:
   - development
