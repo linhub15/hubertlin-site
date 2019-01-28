@@ -17,7 +17,7 @@ I fixed the problem using Angular&nbsp;[attribute directive](https://angular.io/
 
 When the bootstrap toggler is clicked it calls the .collapse() from the ul.nav-list, adds .collapsing before the animation starts, adds .show and finally removes the .collapsing class.&nbsp;
 
-## .show
+### .show
 
 Try removing .show from the open navbar. Notice how it disappears without the animation? If you just want to hide the nav and don't want animations, this works fine.
 
@@ -26,9 +26,7 @@ So in the end here's my little directive.
 ```
 import { Directive, HostListener } from '@angular/core';
 
-@Directive({
-  selector: '[appCloseNav]'
-})
+@Directive({ selector: '[appCloseNav]' })
 export class CloseNavDirective {
 
   constructor() { }
@@ -41,9 +39,10 @@ export class CloseNavDirective {
     if (links.classList.contains('show')) { navToggler.click(); }
   }
 }
-
 ```
 
-&nbsp;
+### Use the directive in html template
+
+To use the directive, place the selector name on the desired html element that you want to have the behavior. I put it on my div.content-wrapper
 
 &nbsp;
