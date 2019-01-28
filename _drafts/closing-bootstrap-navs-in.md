@@ -59,7 +59,6 @@ To use the directive, place the selector name on the desired html element that y
 </div> <!-- / .cotent-wrapper -->
 
 <app-footer></app-footer>
-
 ```
 
-&nbsp;
+Hope this simple solution works for you as it did for me. Feel free to ask me questions or provide suggestions. I'm always looking to learn.
