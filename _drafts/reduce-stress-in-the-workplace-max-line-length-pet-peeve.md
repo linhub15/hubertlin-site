@@ -23,7 +23,7 @@ I don't just mean there needs to be maximum line lengths in our code, but I'm cr
 
 Let me answer that with a question to you. What's easier to read?
 
-<pre style="width:1000px;">
+<pre>
 Dear Sir or Madam,
 
 I am writing to you today in regards to a very noisy dog. Your very noisy dog to be precise. Please keep your dog inside the house at night after 9:00 PM so that it does not wake us up from our slumber.
