@@ -64,4 +64,4 @@ if (userName != null
 }
 ~~~
 
-I believe that if we can reduce the line lengths of our documents, we can make our lives a little easier at work. Who knows, maybe your boss might notice something special about your email presentation.
+I believe that if we can reduce the line lengths of our documents, we can make our lives a little easier at work. Who knows, maybe your colleagues might notice the extra effort you put into your emails.
