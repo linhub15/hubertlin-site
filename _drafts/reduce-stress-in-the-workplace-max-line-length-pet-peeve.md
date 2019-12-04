@@ -23,4 +23,16 @@ I don't just mean there needs to be maximum line lengths in our code, but I'm cr
 
 Let me answer that with a question to you. What's easier to read?
 
+\*\*\* LONG STRING OF TEXT IN AN EMAIL \*\*\*
+
+Short email broken up
+
 &nbsp;
+
+\*\*\* LONG STRING OF TEXT FOR CODE \*\*\*
+
+Broken up code&nbsp;
+
+&nbsp;
+
+I believe that if we can reduce the line lengths of our documents, we can make our lives a little easier at work. Who knows, maybe your boss might notice you put thought into your email presentation and give you points for **attention to detail**.
