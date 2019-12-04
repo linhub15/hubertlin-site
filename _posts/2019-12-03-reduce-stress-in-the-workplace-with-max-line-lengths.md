@@ -21,7 +21,7 @@ I don't just mean there needs to be maximum line lengths in our code, but I'm cr
 
 ## Why?
 
-Let me answer that with a question to you. What's easier to read?
+Let me answer that with a question. What's easier to read?
 
 ~~~
 Dear Sir or Madam,
