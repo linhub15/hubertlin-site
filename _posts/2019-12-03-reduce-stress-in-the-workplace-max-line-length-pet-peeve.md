@@ -23,34 +23,37 @@ I don't just mean there needs to be maximum line lengths in our code, but I'm cr
 
 Let me answer that with a question to you. What's easier to read?
 
-<pre>
+~~~
 Dear Sir or Madam,
 
 I am writing to you today in regards to a very noisy dog. Your very noisy dog to be precise. Please keep your dog inside the house at night after 9:00 PM so that it does not wake us up from our slumber.
 
-Kindest regards, 
+Kindest regards,
 
 Your neighbour
-</pre>
+~~~
 
-Or the email broken up...
-<pre>
+Or the email broken up…
+
+~~~
 I am writing to you today in regards to a very noisy dog.
 Your very noisy dog to be precise.
 Please keep your dog inside the house at night after 9:00 PM
 so that it does not wake us up from our slumber.
-</pre>
+~~~
 
 Long if statements like this?
-<pre>
+
+~~~
 if (userName != null && password != null && email != String.Empty && dateTime.IsValid || overrideValidation)
 {
   RegisterUser(userName, password, email);
 }
-</pre>
+~~~
 
 Or with maximum line lengths?
-<pre>
+
+~~~
 if (userName != null
     && password != null
     && email != String.Empty
@@ -59,6 +62,6 @@ if (userName != null
 {
   RegisterUser(userName, password, email);
 }
-</pre>
+~~~
 
 I believe that if we can reduce the line lengths of our documents, we can make our lives a little easier at work. Who knows, maybe your boss might notice something special about your email presentation.
