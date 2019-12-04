@@ -7,7 +7,7 @@ categories:
   - development
 ---
 
-Black Friday just passed and I'm sure there have been plenty of large TV and computer monitor purchases. I'll be holding off for the ultra wide screen monitors to come down in price a little more before get one for myself.&nbsp;
+Black Friday just passed and I'm sure there have been plenty of large TV and computer monitor purchases. I'll be holding off for the ultra wide screen monitors to come down in price a little more before I get one for myself.&nbsp;
 
 With our monitors getting wider and wider, do we still need maximum line lengths in our code?&nbsp;
 
