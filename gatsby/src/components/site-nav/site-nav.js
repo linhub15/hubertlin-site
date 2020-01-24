@@ -8,7 +8,7 @@ const pages = [
 
 function renderLinks(pages) {
   return pages.map(page => (
-    <a className="nav-item pb-1 mx-3" href={page.url}>
+    <a className="nav-item pb-1 mx-3" key={page.title} href={page.url}>
       {page.title}
     </a>
   ));
