@@ -1,16 +1,18 @@
 import React from "react";
 
-import SiteNav from "../components/site-nav/site-nav";
-import Profile from "../components/profile/";
+import Profile from "../components/profile/profile";
 import Github from "../components/social-media/github";
 import Linkedin from "../components/social-media/linkedin";
+
+import "./main.css";
 
 const IndexPage = () => (
   <>
     <Profile></Profile>
-    <SiteNav></SiteNav>
-    <Github></Github>
-    <Linkedin></Linkedin>
+    <div class="mx-auto flex-col social-media">
+      <Github></Github>
+      <Linkedin></Linkedin>
+    </div>
   </>
 );
 

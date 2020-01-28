@@ -1,7 +1,6 @@
 import React from "react";
 
 import profileImg from "./hubert-lin.png";
-import "./profile.css";
 
 const Profile = () => (
   <div className="text-center">
