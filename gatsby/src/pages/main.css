@@ -7,6 +7,13 @@ a {
 
 /* main styles */
 
+html, body {
+  font-family: 'Major Mono Display', monospace;
+}
+.max-width-sm {
+  max-width: 256px;
+}
+
 .flex-col {
   display: flex;
   flex-direction: column;
@@ -21,8 +28,7 @@ a {
   margin-right: auto;
 }
 
-.social-media {
-  max-width: 256px;
+.p-1 {
   padding: 1em;
 }
 
