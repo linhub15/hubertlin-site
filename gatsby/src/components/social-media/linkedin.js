@@ -3,8 +3,8 @@ import icon from "./linkedin.svg";
 
 const Linkedin = () => (
   <a href={"https://linkedin.com"}>
-    <img class="icon" src={icon} alt="LinkedIn logo" />
-    <span class="text">&nbsp;LinkedIn</span>
+    <img className="icon" src={icon} alt="LinkedIn logo" />
+    <span className="text">&nbsp;LinkedIn</span>
   </a>
 );
 

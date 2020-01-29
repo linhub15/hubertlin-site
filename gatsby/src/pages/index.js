@@ -9,7 +9,7 @@ import "./main.css";
 const IndexPage = () => (
   <>
     <Profile></Profile>
-    <div class="mx-auto flex-col social-media">
+    <div className="social-media flex-col max-width-sm mx-auto p-1">
       <Github></Github>
       <Linkedin></Linkedin>
     </div>
