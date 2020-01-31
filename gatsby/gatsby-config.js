@@ -34,7 +34,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Major Mono Display`]
+        fonts: [`Josefin Sans`]
       }
     }
   ]
