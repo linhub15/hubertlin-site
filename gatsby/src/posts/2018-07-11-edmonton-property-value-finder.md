@@ -1,7 +1,8 @@
 ---
+path: /blog/edmonton-property-value-finder
 layout: posts
 title: "Edmonton Property Value Finder"
-date: 2018-07-11 00:00:00
+date: 2018-07-11
 comments: true
 categories: development
 ---
