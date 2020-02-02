@@ -1,4 +1,5 @@
 ---
+path: /blog/2019-01-28-closing-bootstrap-nav-in-angular
 layout: posts
 title: Closing Bootstrap Nav in Angular
 date: 2019-01-28 00:00:00

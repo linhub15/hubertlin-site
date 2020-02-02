@@ -1,4 +1,5 @@
 ---
+path: /blog/2018-11-30-how-i-decoupled-identity-core-from-net-core-api
 layout: posts
 title: How I Decoupled Identity Core from .NET Core API
 date: 2018-11-30 00:00:00

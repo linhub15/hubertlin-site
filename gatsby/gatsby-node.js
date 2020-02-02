@@ -1,6 +1,6 @@
-import { resolve } from "path"
+const resolve = require("path").resolve;
 
-export async function createPages({ actions, graphql, reporter }) {
+exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
   const blogPostTemplate = resolve(`src/templates/blog-template.js`)

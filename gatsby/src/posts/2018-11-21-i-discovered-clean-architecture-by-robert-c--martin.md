@@ -1,4 +1,5 @@
 ---
+path: /blog/2018-11-21-i-discovered-clean-architecture-by-robert-c--martin
 layout: posts
 title: I Discovered Clean Architecture by Robert C. Martin
 date: 2018-11-21 00:00:00

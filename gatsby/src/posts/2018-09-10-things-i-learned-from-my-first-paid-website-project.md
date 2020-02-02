@@ -1,4 +1,5 @@
 ---
+path: /blog/2018-09-10-things-i-learned-from-my-first-paid-website-project
 layout: posts
 title: Things I Learned from My First Paid Website Project
 date: 2018-09-10 00:00:00
