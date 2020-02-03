@@ -1,8 +1,8 @@
 ---
-path: /blog/2018-07-14-hosting-angular-app-on-cloud-cannon
+path: /blog/hosting-angular-app-on-cloud-cannon
 layout: posts
 title: Hosting Angular App on Cloud Cannon
-date: 2018-07-14 00:00:00
+date: 2018-07-14
 comments: true
 categories:
   - development
