@@ -1,7 +1,7 @@
 ---
-path: /blog/i-discovered-clean-architecture-by-robert-c--martin
+path: /blog/discovering-clean-architecture-by-robert-c-martin
 layout: posts
-title: I Discovered Clean Architecture by Robert C. Martin
+title: Discovering Clean Architecture by Robert C. Martin
 date: 2018-11-21
 comments: true
 categories:

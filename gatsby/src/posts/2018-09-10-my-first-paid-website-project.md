@@ -1,7 +1,7 @@
 ---
-path: /blog/things-i-learned-from-my-first-paid-website-project
+path: /blog/my-first-paid-website-project
 layout: posts
-title: Things I Learned from My First Paid Website Project
+title: My First Paid Website Project
 date: 2018-09-10
 comments: true
 categories:

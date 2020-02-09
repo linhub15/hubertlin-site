@@ -1,7 +1,7 @@
 ---
-path: /blog/reduce-stress-in-the-workplace-with-max-line-lengths
+path: /blog/max-line-lengths
 layout: posts
-title: Reduce stress in the workplace with max line lengths
+title: Max line lengths
 date: 2019-12-03
 comments: true
 categories:
