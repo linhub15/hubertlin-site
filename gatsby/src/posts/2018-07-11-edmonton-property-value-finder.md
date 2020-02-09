@@ -13,7 +13,7 @@ The first iteration of the app used the Bootstrap 4 Framework for front-end comp
 
 *Although the data is from the City of Edmonton, I cannot guarantee the **accuracy** or the **freshness** of the data.*
 
-[Try Out the App](https://yegpropertyassessment.hubertlin.me/address-search){: .btn.btn-primary target="_blank"}
+[Try Out the App](https://yegpropertyassessment.hubertlin.me/address-search)
 
 ## So what's it do?
 

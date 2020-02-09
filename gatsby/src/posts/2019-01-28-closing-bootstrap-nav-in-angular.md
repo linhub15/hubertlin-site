@@ -12,7 +12,7 @@ categories:
 * Does your app use Angular 6+?
 * Does navbar stay open even when navigating to different components? (Mobile)
 
-I fixed the problem using Angular [attribute directive](https://angular.io/guide/attribute-directives){: target="_blank"}.
+I fixed the problem using Angular [attribute directive](https://angular.io/guide/attribute-directives).
 
 ### How the bootstrap toggler works
 
