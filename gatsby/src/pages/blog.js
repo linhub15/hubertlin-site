@@ -1,19 +1,22 @@
 import React from "react";
 import { graphql } from "gatsby";
 import PostLink from "../components/post-link";
+import Layout from "../components/layout/layout";
 
 const BlogPage = ({
   data: {
-    allMarkdownRemark: {edges},
+    allMarkdownRemark: { edges },
   }
 }) => {
   const Posts = edges
     .filter(edge => !!edge.node.frontmatter.date)
-    .map(edge => <PostLink key={edge.node.id} post={edge.node}/>)
-return (<div>
-  {Posts}
-</div>
-)}
+    .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+  return (
+    <Layout>
+      {Posts}
+    </Layout>
+  )
+}
 
 export default BlogPage
 
