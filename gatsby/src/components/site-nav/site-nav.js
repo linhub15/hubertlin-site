@@ -1,4 +1,5 @@
 import React from "react";
+import "./site-nav.css";
 
 const pages = [
   { title: "Home", url: "/" },
@@ -6,14 +7,15 @@ const pages = [
   { title: "Blog", url: "/blog" }
 ];
 
+
 function renderLinks(pages) {
   return pages.map(page => (
-    <a className="nav-item pb-1 mx-3" key={page.title} href={page.url}>
+    <a className="nav-item mx-auto" key={page.title} href={page.url}>
       {page.title}
     </a>
   ));
 }
 
-const SiteNav = () => <nav>{renderLinks(pages)}</nav>;
+const SiteNav = () => <nav class="top-nav">{renderLinks(pages)}</nav>;
 
 export default SiteNav;
