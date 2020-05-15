@@ -2,7 +2,7 @@ import React from "react";
 
 const pages = [
   { title: "Home", url: "/" },
-  { title: "Projects", url: "#projects" },
+  { title: "Projects", url: "/projects" },
   { title: "Blog", url: "/blog" }
 ];
 
