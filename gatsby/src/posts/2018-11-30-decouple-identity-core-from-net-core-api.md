@@ -8,13 +8,13 @@ categories:
   - development
 ---
 
-    During my quest to make my architecture "clean" there was a **HUGE** dependency that needed to be inverted: <u><em>Microsoft.AspNetCore.Identity</em></u>. Even though many applications require authentication, we still shouldn't be depending on any authentication frameworks.
+During my quest to make my architecture clean there was a **HUGE** dependency that needed to be inverted: <u><em>Microsoft.AspNetCore.Identity</em></u>. Even though many applications require authentication, we still shouldn't be depending on any authentication frameworks.
 
 
 According to Robert C. Martin we shouldn't depend on a framework because the business rules can change or the frameworks can change. We keep things loosely coupled so that in case we need to swap out an implementation we can do so without affecting our business rules.
 
 
-At first, my code following typical ASP.NET Core folder structure: Models, Controllers etc. I had the authentication logic in my *AuthenticationController.cs,*&nbsp;so that's where I injected UserManager&lt;TUser&gt; and SignInManager&lt;TUser&gt;. Just in case you're not familiar with Identity Core, those two managers help us handle users and signing them in. The &lt;TUser&gt; is a class of user, e.g. IdentityUser is the Microsoft User class.
+At first, my code following typical ASP.NET Core folder structure: Models, Controllers etc. I had the authentication logic in my *AuthenticationController.cs*,so that's where I injected `UserManager<TUser>` and `SignInManager<TUser>`. Just in case you're not familiar with Identity Core, those two managers help us handle users and signing them in. The `<TUser>` is a class of user, e.g. IdentityUser is the Microsoft User class.
 
 
 The newly decoupled project layout follows this folder structure:
@@ -28,7 +28,7 @@ The newly decoupled project layout follows this folder structure:
 
 #### 1. Define authentication methods
 
-We need to ***register*** and ***sign in*** a user. I didn't include a ***sign out*** because I will be using JSON Web tokens and they will have a short expiry date. It's&nbsp;<u>not secure</u> so don't do this in a real application.
+We need to **register** and **sign in** a user. I didn't include a **sign out** because I will be using JSON Web tokens and they will have a short expiry date. It's not secure so don't do this in a real application.
 
 
 ![](/uploads/iauthenticator-1.jpg)
@@ -37,7 +37,7 @@ We need to ***register*** and ***sign in*** a user. I didn't include a ***sign o
 #### 2. Define User Class
 
 
-Next, we'll need to define the&nbsp;**User**&nbsp;object that we're passing into Register. In my case I only have 3 fields. User name, email, and password.
+Next, we'll need to define the **User** object that we're passing into Register. In my case I only have 3 fields. User name, email, and password.
 
 
 ![](/uploads/user.jpg)
@@ -100,7 +100,7 @@ public class Authenticator : IAuthenticator
 }
 ```
 
-*\*key, expiry date, and JwtIssuer should be included in an application config file*
+*key, expiry date, and JwtIssuer should be included in an application config file*
 
 * Implement Register()
 * Implement SignIn()
@@ -165,4 +165,4 @@ public class AuthenticationController : ControllerBase
 }
 ```
 
-This code refactoring was inspired by "Clean Architecture" by Robert C. Martin. I'm still pretty new at software design and programming so feel free to offer suggestions and point out any errors you find.
+This code refactoring was inspired by "Clean Architecture" by Robert C. Martin.

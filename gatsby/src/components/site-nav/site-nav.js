@@ -3,7 +3,8 @@ import React from "react";
 const pages = [
   { title: "Home", url: "/" },
   { title: "Projects", url: "#projects" },
-  { title: "Blog", url: "/blog" }
+  { title: "Blog", url: "/blog" },
+  { title: "Notes", url: "/notes" }
 ];
 
 function renderLinks(pages) {
